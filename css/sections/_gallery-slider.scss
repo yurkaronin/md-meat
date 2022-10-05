@@ -1,0 +1,38 @@
+.gallery-slider {
+  margin-bottom: 107px;
+  &__inner {
+    position: relative;
+    overflow: hidden;
+
+    .swiper-slide {
+      img {
+        border-radius: 20px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .slider-button {
+    position: absolute;
+    top: 30%;
+    z-index: 2;
+  }
+
+  .js-button-next {
+    right: -88px;
+
+    svg {
+      position: absolute;
+      left: 48px;
+    }
+  }
+
+  .js-button-prev {
+    left: -88px;
+
+    svg {
+      position: absolute;
+      right: 48px;
+    }
+  }
+}

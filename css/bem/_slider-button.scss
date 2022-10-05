@@ -1,0 +1,29 @@
+.slider-button {
+  border: none;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 176px;
+  height: 176px;
+  transition: all 0.3s;
+  border-radius: 50%;
+  cursor: pointer;
+
+  svg {
+    pointer-events: none;
+    path {
+      transition: all 0.3s;
+    }
+  }
+
+  &:hover {
+    background-color: #c9c6c6;
+
+    svg {
+      path {
+        stroke: #ffffff;
+      }
+    }
+  }
+}
