@@ -235,8 +235,21 @@ input[type=radio].visually-hidden {
   border-radius: 50%;
   cursor: pointer;
 }
+@media (max-width: 768px) {
+  .slider-button {
+    width: 88px;
+    height: 88px;
+  }
+}
 .slider-button svg {
   pointer-events: none;
+  width: 42px;
+  height: 26px;
+}
+@media (max-width: 768px) {
+  .slider-button svg {
+    width: 21px;
+  }
 }
 .slider-button svg path {
   transition: all 0.3s;
@@ -370,19 +383,44 @@ input[type=radio].visually-hidden {
   top: 30%;
   z-index: 2;
 }
+@media (max-width: 768px) {
+  .gallery-slider .slider-button {
+    top: 20%;
+  }
+}
 .gallery-slider .js-button-next {
   right: -88px;
+}
+@media (max-width: 768px) {
+  .gallery-slider .js-button-next {
+    right: -44px;
+  }
 }
 .gallery-slider .js-button-next svg {
   position: absolute;
   left: 48px;
 }
+@media (max-width: 768px) {
+  .gallery-slider .js-button-next svg {
+    left: 0;
+  }
+}
 .gallery-slider .js-button-prev {
   left: -88px;
+}
+@media (max-width: 768px) {
+  .gallery-slider .js-button-prev {
+    left: -44px;
+  }
 }
 .gallery-slider .js-button-prev svg {
   position: absolute;
   right: 48px;
+}
+@media (max-width: 768px) {
+  .gallery-slider .js-button-prev svg {
+    right: 0;
+  }
 }
 
 .about {

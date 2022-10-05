@@ -16,23 +16,41 @@
     position: absolute;
     top: 30%;
     z-index: 2;
+
+    @media (max-width: 768px) {
+      top: 20%;
+    }
   }
 
   .js-button-next {
     right: -88px;
 
+    @media (max-width: 768px) {
+      right: -44px;
+    }
+
     svg {
       position: absolute;
       left: 48px;
+
+      @media (max-width: 768px) {
+        left: 0;
+      }
     }
   }
 
   .js-button-prev {
     left: -88px;
+    @media (max-width: 768px) {
+      left: -44px;
+    }
 
     svg {
       position: absolute;
       right: 48px;
+      @media (max-width: 768px) {
+        right: 0;
+      }
     }
   }
 }
