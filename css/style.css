@@ -373,7 +373,10 @@ input[type=radio].visually-hidden {
 .header__buttons ul {
   display: grid;
   grid-template-rows: 1fr;
-  gap: 8px;
+  gap: 0;
+}
+.header__buttons li {
+  margin-bottom: 8px;
 }
 
 .header__link {

@@ -19,7 +19,11 @@
   ul {
     display: grid;
     grid-template-rows: 1fr;
-    gap: 8px;
+    gap: 0;
+  }
+
+  li {
+    margin-bottom: 8px;
   }
 }
 
