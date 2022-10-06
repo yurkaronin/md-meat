@@ -10,7 +10,7 @@
   border-radius: 50%;
   cursor: pointer;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     width: 88px;
     height: 88px;
   }
@@ -20,7 +20,7 @@
     width: 42px;
     height: 26px;
 
-    @media (max-width: 768px) {
+    @media (max-width: 1024px) {
       width: 21px;
     }
     path {

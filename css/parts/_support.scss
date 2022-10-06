@@ -5,8 +5,8 @@
 }
 
 .visually-hidden:not(:focus),
-input[type=checkbox].visually-hidden,
-input[type=radio].visually-hidden {
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
   position: absolute;
   overflow: hidden;
   clip: rect(0 0 0 0);
@@ -28,22 +28,22 @@ input[type=radio].visually-hidden {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border-radius: 50%;
   transition: all 0.3s;
   top: 45.5%;
   z-index: 1;
 
-  svg {
+  /* svg {
     position: relative;
     z-index: 2;
   }
 
   svg path {
     transition: all 0.3s;
-  }
+  } */
 
-  &::before {
+  /* &::before {
     content: "";
     position: absolute;
     left: 0;
@@ -56,9 +56,9 @@ input[type=radio].visually-hidden {
     transition-duration: 0.3s;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     z-index: 0;
-  }
+  } */
 
-  &:hover {
+  /* &:hover {
     background-color: #91C137 !important;
 
     &::before {
@@ -77,18 +77,45 @@ input[type=radio].visually-hidden {
       stroke: none;
       fill: #ffffff;
     }
-  }
+  } */
 
-  &:after {
+  /* &:after {
     display: none;
-  }
+  } */
 
-  @media (max-width: 650px) {
+  /* @media (max-width: 650px) {
     width: 60px;
     height: 60px;
-  }
+  } */
 }
 
 .swiper-button-disabled {
   opacity: 0 !important;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  position: absolute;
+  color: #000000;
+}
+
+.swiper-button-next:after {
+  left: 50px;
+}
+.swiper-button-prev:after {
+  right: 50px;
+}
+
+@media (max-width: 1024px) {
+  .slider-button:after {
+    font-size: 30px;
+  }
+
+  .swiper-button-next:after {
+    left: 22px;
+}
+
+.swiper-button-prev:after {
+  right: 22px;
+}
 }

@@ -1,11 +1,23 @@
 .about {
-  margin-bottom: 105px;
+  margin-bottom: 120px;
+
+  @media (max-width: 1024px) {
+    margin-bottom: 80px;
+  }
+
+  @media (max-width: 425px) {
+    margin-bottom: 50px;
+  }
   &__grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 32px;
     justify-content: space-between;
     align-items: center;
+
+    @media (max-width: 425px) {
+      grid-template-columns: 1fr;
+    }
   }
   &__img {
     img {

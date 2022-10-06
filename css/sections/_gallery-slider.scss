@@ -1,5 +1,13 @@
 .gallery-slider {
-  margin-bottom: 107px;
+  margin-bottom: 120px;
+
+  @media (max-width: 1024px) {
+    margin-bottom: 80px;
+  }
+
+  @media (max-width: 425px) {
+    margin-bottom: 50px;
+  }
   &__inner {
     position: relative;
     overflow: hidden;
@@ -14,18 +22,22 @@
 
   .slider-button {
     position: absolute;
-    top: 30%;
+    top: 28%;
     z-index: 2;
 
-    @media (max-width: 768px) {
-      top: 20%;
+    @media (max-width: 1024px) {
+      top: 34%;
+    }
+
+    @media (max-width: 425px) {
+      top: 42%;
     }
   }
 
   .js-button-next {
     right: -88px;
 
-    @media (max-width: 768px) {
+    @media (max-width: 1024px) {
       right: -44px;
     }
 
@@ -33,7 +45,7 @@
       position: absolute;
       left: 48px;
 
-      @media (max-width: 768px) {
+      @media (max-width: 1024px) {
         left: 0;
       }
     }
@@ -41,14 +53,14 @@
 
   .js-button-prev {
     left: -88px;
-    @media (max-width: 768px) {
+    @media (max-width: 1024px) {
       left: -44px;
     }
 
     svg {
       position: absolute;
       right: 48px;
-      @media (max-width: 768px) {
+      @media (max-width: 1024px) {
         right: 0;
       }
     }

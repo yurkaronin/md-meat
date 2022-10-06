@@ -3,28 +3,45 @@
   color: #ffffff;
   padding: 96px 0 116px;
 
+  @media (max-width: 1024px) {
+    padding: 70px 0;
+  }
+
+  @media (max-width: 425px) {
+    padding: 45px 0;
+  }
+
   &__flex {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  &__tel {
-    font-weight: 700;
+  .title {
     font-size: 56px;
     line-height: 1.29;
     text-align: center;
     text-decoration-line: underline;
     color: #ffffff;
-    margin: 0;
     margin-bottom: 60px;
-    // text-decoration: none;
-    font-family: inherit;
+
+    @media (max-width: 1024px) {
+      margin-bottom:40px;
+    }
+
+    @media (max-width: 425px) {
+      margin-bottom:26px;
+    }
+
   }
   &__text {
     font-size: 32px;
     margin: 0;
     margin-bottom: 60px;
     text-align: center;
+
+    @media (max-width: 1024px) {
+      font-size: 22px;
+    }
   }
   &__bottom {
     display: flex;
